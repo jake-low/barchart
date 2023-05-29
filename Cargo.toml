@@ -1,0 +1,15 @@
+[package]
+name = "barchart"
+version = "1.0.0"
+description = "Print simple barcharts"
+authors = ["Jake Low <hello@jakelow.com>"]
+homepage = "https://github.com/jake-low/barchart"
+repository = "https://github.com/jake-low/barchart"
+license = "ISC"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.2", features = ["derive", "cargo"] }
+nom = "7.1"
+termsize = "0.1"
+unicode-width = "0.1"
