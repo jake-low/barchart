@@ -1,5 +1,7 @@
 `barchart` produces simple terminal barcharts.
 
+It reads lines from STDIN and reproduces them on STDOUT. For any line beginning with a number (ignoring any leading whitespace), it appends a bar representing the value of that number.
+
 ## Examples
 
 `barchart` works great for commands that output a sequence of lines each beginning with a number.
