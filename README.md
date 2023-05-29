@@ -50,6 +50,16 @@ $ cat ~/.zsh_history | cut -d ' ' -f1 | sort | uniq -c | sort -nr | head | barch
     492 rm     ■■■■■■■■
 ```
 
+## Installation
+
+You can install `barchart` via Homebrew.
+
+```
+brew install jake-low/tools/barchart
+```
+
+Alternately, if you have a Rust toolchain installed you can download the source code for a [release](https://github.com/jake-low/barchart/releases) and build it with `cargo build`.
+
 ## Features
 
 `barchart` aligns the start of each bar by measuring the displayed width of the prefix string, so it should work pretty well even if the bar labels contain non-ASCII characters. It handles both integers and decimal numbers (even when followed by a % sign). If it cannot parse a number from the start of the line, it will pass that line through unmodified (so output containing header rows will work just fine).
